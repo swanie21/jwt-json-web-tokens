@@ -22,7 +22,7 @@ Within the `Network` tab in the Chrome DevTools you can click on the`Headers` ta
 
 Then a token is assigned with the username. This is an example of a token.
 
-<img src="img/token.png" alt="Chrome accessibility developer tools" height="100px" width="250px" />
+<img src="img/token.png" alt="Chrome accessibility developer tools" height="200px" width="400px" />
 
 Click the `Preview` tab within the `Network` tab to view what the server returned. The server returned a signed token with a secret only the server knows about and the user information.
 
