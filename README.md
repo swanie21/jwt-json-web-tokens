@@ -6,7 +6,7 @@
 
 *Need to `npm install cors --save`*  
 
-### How to start servers
+## How to Start Servers
 
 Start `http://localhost:3000/random-user` by `nodemon server.js`
 
@@ -14,19 +14,19 @@ Start `http://localhost:8080/` by `http-server`
 
 *`http-server` is a command-line http server. Install by `npm install http-server -g`*
 
-## How to use developer tools to inspect JWT
+## How to Use Developer Tools to Inspect JWTs
 
-Within the `Network` tab in the Chrome DevTools you can click on the `Preview` tab to view the username and password that are sent to the server.
-
-<img src="img/login-preview.png" alt="Chrome accessibility developer tools" height="600px" width="450px" />
-
-Click the`Headers` tab within the `Network` tab to view the request the user sent. The user sent a username and password.
+Within the `Network` tab in the Chrome DevTools you can click on the`Headers` tab to view the request the user sent. The user sent a username and password.
 
 <img src="img/request.png" alt="Chrome accessibility developer tools" height="600px" width="450px" />
 
 Then a token is assigned with the username. This is an example of a token.
 
 <img src="img/token.png" alt="Chrome accessibility developer tools" height="100px" width="250px" />
+
+Click the `Preview` tab within the `Network` tab to view what the server returned. The server returned a signed token with a secret only the server knows about and the user information.
+
+<img src="img/preview.png" alt="Chrome accessibility developer tools" height="600px" width="1000px" />
 
 Click the `Response` tab within the `Network` tab to view the token and the user information that is sent to the server to verify the user.
 
